@@ -1,0 +1,19 @@
+field,display_name,browse_link,external_link,dc_map,schema_map
+title,Title,,,DCTERMS.title,headline
+creator,Contributor,,,DCTERMS.creator,creator
+interviewer,Interviewer,,,,
+date,Date,,,DCTERMS.date,dateCreated
+date_digitised,Date digitised,,,,
+description,Description,,,DCTERMS.description,description
+subject,Tags,true,,DCTERMS.subject,keywords
+location,Location,,,DCTERMS.coverage,contentLocation
+latitude,Latitude,,,,
+longitude,Longitude,,,,
+source,Source,,,,
+identifier,Source Identifier,,,,
+type,Type,,,DCTERMS.type,
+format,Format,,,,encodingFormat
+language,Language,,,DCTERMS.language,
+permission_level,Permission level,true,,,
+copyright_holder,Copyright holder,,,,
+rightsstatement,,,,DCTERMS.rights,license
