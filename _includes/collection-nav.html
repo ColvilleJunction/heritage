@@ -3,7 +3,7 @@
     Collection Navbar.
 
     Creates a basic nav menu using Bootstrap navbar component, https://getbootstrap.com/docs/5.3/components/navbar/
-    
+
     Configured used "_data/config-nav.csv".
     Typically added to the "_layout/default.html".
     The color theme options can be set in "theme.yml"
@@ -20,7 +20,7 @@
                 <img class="img-fluid" id="mobile-nav-image" src="{{ site.organization-logo-nav | relative_url }}" title="{{ site.organization-name }}" alt="{{ site.organization-name | escape }} home" >
             </a>
         </span>{% endif %}
-        
+
         <div class="collapse navbar-collapse" id="page-nav">
             <ul class="navbar-nav me-auto">
                 {%- assign navItems = site.data.config-nav | where_exp: "item", "item.display_name and item.dropdown_parent == nil" -%}
@@ -31,8 +31,8 @@
                 </li>
                 {%- else -%}
                 <li class="nav-item dropdown">
-                    {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_name' %}
-                    {%- assign childStubs = navChildren | map: 'stub' -%}
+                    {% assign navChildren = site.data.config-nav | where_exp: "item", "item.dropdown_parent == nav.display_name" %}
+                    {%- assign childStubs = navChildren | map: "stub" -%}
                     <a class="nav-link  dropdown-toggle{% if childStubs contains page.url %} active{% endif %}" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ nav.display_name }}</a>
                     <div class="dropdown-menu">
                         {% for c in navChildren %}
@@ -43,9 +43,9 @@
                 {% endif %}
                 {%- endfor -%}
             </ul>
-            
+
             {% include nav-search-lunr.html %}
-            
+
         </div>
     </div>
 </nav>
