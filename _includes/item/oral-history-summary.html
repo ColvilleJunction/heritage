@@ -1,0 +1,41 @@
+{%- assign has_oral_history = page.interviewer or page.object_transcript -%}
+{%- if has_oral_history -%}
+<div class="card border-primary shadow-sm mb-4">
+    <div class="card-body">
+        <h3 class="h6 text-uppercase fw-bold mb-3">Oral History Details</h3>
+
+        {% if page.interviewer %}
+        <p class="mb-2"><strong>Interviewer:</strong> {{ page.interviewer }}</p>
+        {% endif %}
+
+        {% if page.object_transcript %}
+        <p class="mb-2"><strong>Transcript available</strong></p>
+
+        {% assign transcript_type = page.object_transcript | slice: 0,1 %}
+        {% if transcript_type == '/' %}
+        {% assign transcript_location = page.object_transcript | remove_first: '/' %}
+        {% assign transcript = site.pages | where: 'path', transcript_location | first %}
+        {% assign transcript_text = transcript.content | markdownify | strip_html %}
+        {% else %}
+        {% assign transcript_text = page.object_transcript | markdownify | strip_html %}
+        {% endif %}
+
+        <p class="mb-3 text-muted">{{ transcript_text | truncatewords: 40 }}</p>
+
+        <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#oralHistoryTranscript{{ page.objectid }}" aria-expanded="false" aria-controls="oralHistoryTranscript{{ page.objectid }}">
+            Read full transcript
+        </button>
+
+        <div class="collapse mt-3" id="oralHistoryTranscript{{ page.objectid }}">
+            <div class="border rounded p-3 bg-light">
+                {% if transcript_type == '/' %}
+                {{ transcript.content | markdownify }}
+                {% else %}
+                {{ page.object_transcript | markdownify }}
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{%- endif -%}

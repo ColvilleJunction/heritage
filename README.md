@@ -19,6 +19,14 @@ However, here is a super quick overview of the process:
 
 Please feel free to ask questions in the main [CollectionBuilder discussion forum](https://github.com/CollectionBuilder/collectionbuilder.github.io/discussions).
 
+## Built Ons
+
+There are also “Built Ons” which extend CB templates into new project types. Like the main CB templates, they are self-contained and ready to use.
+
+- [Oral History as Data](https://oralhistoryasdata.github.io/docs/) - An oral history publishing and analysis framework for visualizing coded interview transcripts as interactive digital collections.
+
+Each Built On has its own documentation, but generally refers back to these docs for the basics inherited from their CB base.
+
 ----------
 
 ## CollectionBuilder 
