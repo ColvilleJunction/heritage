@@ -1,0 +1,520 @@
+# Pages CMS configuration for the Colville Living Heritage website
+# Repo: ColvilleJunction/cb-site
+#
+# This file lives at the root of the cb-site repository (same level as
+# _config.yml). Keep it here, on the main branch.
+#
+# What each section lets you do:
+#   Site settings   - titles, tagline, description, logos
+#   Look and feel   - banner image, text sizes, colours, map and search options
+#   Pages           - the wording on About and other pages, and adding new pages
+#   Menu            - the links across the top, and their names
+#   Photos          - upload and manage images (also available in the Media tab)
+#   Archive items   - add or edit the interview and photo records
+#   Advanced        - the fine detail tables (item fields, browse, search, map)
+#
+# Note: editing the YAML files (Site settings, Look and feel) through the CMS
+# will strip the helper comments that are currently in those files. The values
+# are kept, only the notes are removed. That is normal for this kind of tool.
+
+##########################################################################
+# MEDIA - where uploaded files are stored and the paths written into content
+##########################################################################
+media:
+  - name: images
+    label: Photos and images
+    input: assets/img
+    output: /assets/img
+    categories: [image]
+    rename: safe
+  - name: objects
+    label: Archive media (photos, audio, PDFs)
+    input: objects
+    output: /objects
+    categories: [image, audio, video, document]
+    rename: safe
+
+##########################################################################
+# CONTENT - the editable sections shown in the Pages CMS sidebar
+##########################################################################
+content:
+
+  # ----------------------------------------------------------------------
+  # 1. SITE SETTINGS  (_config.yml)
+  # ----------------------------------------------------------------------
+  - name: site_settings
+    label: Site settings
+    type: file
+    path: _config.yml
+    format: yaml
+    fields:
+      - name: title
+        label: Site title
+        type: string
+        description: Appears in the top banner and the browser tab.
+      - name: tagline
+        label: Tagline
+        type: string
+        description: Short phrase shown with the title in the banner.
+      - name: description
+        label: Description
+        type: text
+        description: Used by search engines and social media. Keep to about 160 characters.
+      - name: keywords
+        label: Keywords
+        type: string
+        description: Short list of subjects, separated by semicolons.
+      - name: author
+        label: Author or creator
+        type: string
+      - name: organization-name
+        label: Organisation name
+        type: string
+      - name: organization-link
+        label: Organisation website
+        type: string
+      - name: organization-logo-banner
+        label: Banner logo (large, home page)
+        type: image
+        options:
+          media: images
+        description: Logo shown in the large home page banner.
+      - name: organization-logo-nav
+        label: Menu and footer logo (small)
+        type: image
+        options:
+          media: images
+        description: Small logo shown in the menu bar and the footer.
+      # --- Technical settings below. Shown but locked so they are kept safe. ---
+      - name: url
+        label: Site domain (advanced, do not change)
+        type: string
+        readonly: true
+      - name: baseurl
+        label: Base path (advanced, do not change)
+        type: string
+        readonly: true
+      - name: metadata
+        label: Archive data file (advanced, do not change)
+        type: string
+        readonly: true
+        description: The name of the archive CSV in _data. Changing this breaks the collection.
+      - name: source-code
+        label: Source code URL (advanced)
+        type: string
+        readonly: true
+      - name: lib-assets
+        label: Library assets path (advanced)
+        type: string
+        readonly: true
+      - name: exclude
+        label: Build exclude list (advanced)
+        type: string
+        list: true
+        hidden: true
+      - name: sass
+        label: Sass settings (advanced)
+        type: object
+        hidden: true
+        fields:
+          - name: style
+            type: string
+
+  # ----------------------------------------------------------------------
+  # 2. LOOK AND FEEL  (_data/theme.yml)
+  # ----------------------------------------------------------------------
+  - name: look_and_feel
+    label: Look and feel
+    type: file
+    path: _data/theme.yml
+    format: yaml
+    fields:
+      # Home page banner
+      - name: featured-image
+        label: Home banner image
+        type: string
+        description: >-
+          Either an item ID from the archive (e.g. lh_0001) or an image path
+          you have uploaded (e.g. /assets/img/banner.jpg).
+      - name: featured-image-alt-text
+        label: Banner image alt text
+        type: string
+        description: Description of the banner image for screen readers. Only needed if you used an image path above.
+      - name: home-title-y-padding
+        label: Space above the title
+        type: string
+        description: Padding above the home title, e.g. 3em. Larger values give a taller banner.
+      - name: home-banner-image-position
+        label: Banner image position
+        type: select
+        options:
+          values: [center, top, bottom]
+      # Text size and colours
+      - name: base-font-size
+        label: Base text size
+        type: string
+        description: Overall text size, e.g. 1.2em. Larger numbers make all text bigger.
+      - name: text-color
+        label: Text colour
+        type: string
+        description: Hex colour code, e.g. "#191919".
+      - name: link-color
+        label: Link colour
+        type: string
+        description: Hex colour code, e.g. "#0d6efd".
+      - name: base-font-family
+        label: Font family
+        type: string
+        description: Leave blank for the default font, or a Google font name e.g. Roboto.
+      - name: font-cdn
+        label: Font stylesheet link
+        type: string
+        description: Optional. The link tag for a web font, if you set a font family above.
+      # Menu bar colours
+      - name: navbar-color
+        label: Menu text style
+        type: select
+        options:
+          values: [light, dark]
+        description: Use "light" for a dark menu background, "dark" for a light background.
+      - name: navbar-background
+        label: Menu background colour
+        type: select
+        options:
+          values: [bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white]
+      - name: bootswatch
+        label: Theme preset (advanced)
+        type: string
+        description: Optional Bootswatch theme name. Leave blank for the standard look.
+      # Browse and search
+      - name: advanced-search
+        label: Show advanced search
+        type: boolean
+      - name: faceted-search
+        label: Show filters beside search results
+        type: boolean
+      - name: default-sort-field
+        label: Default sort field
+        type: string
+        description: Must match a field in the browse table. Leave blank for random order.
+      - name: browse-buttons
+        label: Previous and next arrows on items
+        type: boolean
+      # Subjects and locations word clouds
+      - name: subjects-fields
+        label: Subjects cloud fields
+        type: string
+        description: Fields used for the Subjects word cloud, separated by semicolons.
+      - name: subjects-min
+        label: Subjects cloud minimum
+        type: number
+        description: Smallest term size shown in the cloud.
+      - name: subjects-stopwords
+        label: Subjects to hide
+        type: string
+        description: Terms to leave out of the cloud, separated by semicolons.
+      - name: locations-fields
+        label: Locations cloud fields
+        type: string
+      - name: locations-min
+        label: Locations cloud minimum
+        type: number
+      - name: locations-stopwords
+        label: Locations to hide
+        type: string
+      # Map
+      - name: auto-center-map
+        label: Auto centre the map
+        type: boolean
+      - name: latitude
+        label: Map centre latitude
+        type: number
+        description: Only used when auto centre is off.
+      - name: longitude
+        label: Map centre longitude
+        type: number
+        description: Only used when auto centre is off.
+      - name: zoom-level
+        label: Map zoom level
+        type: number
+      - name: map-base
+        label: Map background
+        type: select
+        options:
+          values: [Esri_WorldStreetMap, Esri_NatGeoWorldMap, Esri_WorldImagery, OpenStreetMap_Mapnik]
+      - name: map-search
+        label: Search box on map
+        type: boolean
+      - name: map-search-fuzziness
+        label: Map search fuzziness
+        type: number
+        description: From 1 (loose) to 0 (exact match only).
+      - name: map-cluster
+        label: Cluster nearby map pins
+        type: boolean
+      - name: map-cluster-radius
+        label: Map cluster size
+        type: number
+      # Timeline
+      - name: year-navigation
+        label: Timeline year list
+        type: string
+        description: Manually set years for the dropdown, separated by semicolons. Leave blank to auto generate.
+      - name: year-nav-increment
+        label: Timeline year step
+        type: number
+        description: Gap between auto generated years, e.g. 5.
+      # Data downloads
+      - name: metadata-export-fields
+        label: Fields included in data downloads
+        type: text
+      - name: metadata-facets-fields
+        label: Fields used for data facets
+        type: string
+      # Compound (multi part) objects
+      - name: map-child-objects
+        label: Show child objects on map
+        type: boolean
+      - name: timeline-child-objects
+        label: Show child objects on timeline
+        type: boolean
+      - name: data-child-objects
+        label: Show child objects in data table
+        type: boolean
+      - name: browse-child-objects
+        label: Show child objects on browse
+        type: boolean
+      - name: search-child-objects
+        label: Show child objects in search
+        type: boolean
+
+  # ----------------------------------------------------------------------
+  # 3. PAGES  (pages/) - wording of About etc, and new pages
+  # ----------------------------------------------------------------------
+  - name: pages
+    label: Pages
+    type: collection
+    path: pages
+    format: yaml-frontmatter
+    filename:
+      template: '{primary}.md'
+      field: create
+    view:
+      fields: [title, layout, permalink]
+      primary: title
+      sort: [title]
+    fields:
+      - name: title
+        label: Page title
+        type: string
+        required: true
+      - name: layout
+        label: Page type (layout)
+        type: string
+        description: >-
+          Controls how the page works. Leave this as it is on existing pages.
+          For a brand new plain text page, use: page
+      - name: permalink
+        label: Page address (URL)
+        type: string
+        description: >-
+          The address of the page, e.g. /history.html. Changing this on an
+          existing page will break links and menu items pointing to it.
+      - name: heading
+        label: Heading (About page only)
+        type: string
+      - name: sub-heading
+        label: Sub heading (About page only)
+        type: string
+      - name: credits
+        label: Show credits (About page only)
+        type: boolean
+      - name: about-featured-image
+        label: Banner image (About page only)
+        type: string
+        description: An item ID (e.g. lh_0001) or an uploaded image path.
+      - name: position
+        label: Banner image position (About page only)
+        type: string
+      - name: padding
+        label: Banner padding (About page only)
+        type: string
+      - name: cloud-fields
+        label: Cloud fields (Subjects and Locations pages)
+        type: string
+        hidden: true
+      - name: body
+        label: Page content
+        type: text
+        description: >-
+          The page wording, written in Markdown. Leave any lines that start
+          with {% and end with %} exactly as they are, they pull in photos and
+          features. Use ## for a sub heading and a blank line between paragraphs.
+
+  # ----------------------------------------------------------------------
+  # 4. MENU  (_data/config-nav.csv)
+  # ----------------------------------------------------------------------
+  - name: menu
+    label: Menu / navigation
+    type: file
+    path: _data/config-nav.csv
+    format: datagrid
+    fields:
+      - name: display_name
+        label: Menu label
+        type: string
+        description: The name shown in the menu, e.g. About.
+      - name: stub
+        label: Link
+        type: string
+        description: Where it goes, e.g. /about.html or / for home.
+      - name: dropdown_parent
+        label: Dropdown under (optional)
+        type: string
+        description: Leave blank for a normal link. Enter another menu label to nest this under it.
+
+  # ----------------------------------------------------------------------
+  # 5. ARCHIVE ITEMS  (_data/colville-living-heritage.csv)
+  # ----------------------------------------------------------------------
+  - name: archive_items
+    label: Archive items
+    type: file
+    path: _data/colville-living-heritage.csv
+    format: datagrid
+    fields:
+      - name: objectid
+        label: Item ID
+        type: string
+        description: Unique short ID, e.g. lh_0003. No spaces or capitals. Used to link the media file.
+      - name: title
+        label: Title
+        type: string
+      - name: creator
+        label: Contributor
+        type: string
+      - name: interviewer
+        label: Interviewer
+        type: string
+      - name: date
+        label: Date
+        type: string
+      - name: date_digitised
+        label: Date digitised
+        type: string
+      - name: description
+        label: Description
+        type: string
+      - name: subject
+        label: Tags / subjects
+        type: string
+        description: Separate multiple tags with semicolons.
+      - name: location
+        label: Location
+        type: string
+      - name: latitude
+        label: Latitude
+        type: string
+      - name: longitude
+        label: Longitude
+        type: string
+      - name: source
+        label: Source
+        type: string
+      - name: identifier
+        label: Source identifier
+        type: string
+      - name: type
+        label: Type
+        type: string
+      - name: format
+        label: Format
+        type: string
+        description: The file type, e.g. image/jpeg or audio/mpeg.
+      - name: language
+        label: Language
+        type: string
+      - name: permission_level
+        label: Permission level
+        type: string
+        description: One of Private, View only, Reusable with credit, Public domain.
+      - name: copyright_holder
+        label: Copyright holder
+        type: string
+      - name: consent_signed
+        label: Consent signed
+        type: string
+        description: Y or N.
+      - name: rightsstatement
+        label: Rights statement
+        type: string
+      - name: display_template
+        label: Item type (display template)
+        type: string
+        description: One of image, video, pdf, audio, record, compound_object, panorama, multiple.
+      - name: object_location
+        label: Media file path
+        type: string
+        description: Path to the full media file, e.g. /objects/photo.jpg. Upload it in the Media tab first.
+      - name: image_small
+        label: Small image path
+        type: string
+      - name: image_thumb
+        label: Thumbnail image path
+        type: string
+      - name: image_alt_text
+        label: Image alt text
+        type: string
+      - name: notes
+        label: Notes (internal)
+        type: string
+
+  # ----------------------------------------------------------------------
+  # 6. BRAND COLOURS  (_data/config-theme-colors.csv)
+  # ----------------------------------------------------------------------
+  - name: brand_colours
+    label: Brand colours
+    type: file
+    path: _data/config-theme-colors.csv
+    format: datagrid
+    fields:
+      - name: color_class
+        label: Colour role
+        type: string
+        description: primary, secondary, success, info, warning, danger, light, dark.
+      - name: color
+        label: Colour value
+        type: string
+        description: Hex colour code, e.g. "#1B7340". Leave blank to use the default.
+
+  # ----------------------------------------------------------------------
+  # 7. ADVANCED - the detail tables that control which fields appear where
+  # ----------------------------------------------------------------------
+  - name: advanced
+    label: Advanced settings
+    type: group
+    items:
+      - name: config_metadata
+        label: Item page fields
+        type: file
+        path: _data/config-metadata.csv
+        format: datagrid
+      - name: config_browse
+        label: Browse page cards
+        type: file
+        path: _data/config-browse.csv
+        format: datagrid
+      - name: config_search
+        label: Search settings
+        type: file
+        path: _data/config-search.csv
+        format: datagrid
+      - name: config_map
+        label: Map popup fields
+        type: file
+        path: _data/config-map.csv
+        format: datagrid
+      - name: config_table
+        label: Data table columns
+        type: file
+        path: _data/config-table.csv
+        format: datagrid
