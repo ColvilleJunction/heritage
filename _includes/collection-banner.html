@@ -18,7 +18,7 @@
         - banner-sub-heading: smaller text below the heading, by default this is the site tagline.
 
 {%- endcomment -%}
-{% if page.banner-featured-image != false and page.banner-featured-image or page.layout == "home-infographic" %}
+{% if page.banner-featured-image != false and page.banner-featured-image or page.layout == "home-infographic" or site.data.theme.featured-image-on-all-pages %}
     {% if page.banner-featured-image contains '/' %}
         {% assign jumboSrc = page.banner-featured-image | relative_url %}
         {% capture jumboLink %}{% endcapture %}

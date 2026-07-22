@@ -8,7 +8,8 @@
 #
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-featured-image: assets/img/banner-northern-coromandel.png
+featured-image: assets/img/banner northern coromandel.png
+featured-image-on-all-pages: true # set to true to show featured image banner on all pages
 featured-image-alt-text: # add alt text if using url for featured-image (objectid will be automatic from metadata)
 # optional: add extra padding above collection title for a larger image feature. 
 home-title-y-padding: 10em # the margin from the top your title portion will appear.
