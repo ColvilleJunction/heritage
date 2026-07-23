@@ -64,6 +64,11 @@ a {
 }
 
 /* nav bar */
+#navbar-logo,
+.sidebar-brand-logo {
+    max-height: 40px;
+}
+
 #mobile-nav-image {
     max-height: 1.5em;
 }

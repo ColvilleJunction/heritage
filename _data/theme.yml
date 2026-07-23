@@ -12,7 +12,7 @@ featured-image: assets/img/banner northern coromandel.png
 featured-image-on-all-pages: true # set to true to show featured image banner on all pages
 featured-image-alt-text: # add alt text if using url for featured-image (objectid will be automatic from metadata)
 # optional: add extra padding above collection title for a larger image feature. 
-home-title-y-padding: 10em # the margin from the top your title portion will appear.
+home-title-y-padding: 1.5em # the margin from the top your title portion will appear.
 # optional: change position of background image, center, top, bottom
 home-banner-image-position: center # Default is center
 
