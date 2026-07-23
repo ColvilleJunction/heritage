@@ -111,3 +111,16 @@ custom-foot: js/browse-js.html
 </div>
 
 <div class="row" id="browseItems"></div>
+
+<div class="mt-5 pt-4 border-top">
+    <h2>Browse Locations</h2>
+    <p>Use this word cloud visualization to browse locations. Word size is determined by frequency and all words link to a corresponding collection search.</p>
+    {%- assign locations_cloud_fields = site.data.theme.locations-fields -%}
+    {%- assign locations_min = site.data.theme.locations-min | default: 1 -%}
+    {%- assign locations_stopwords = site.data.theme.locations-stopwords -%}
+    {%- assign locations_cloud_id = "cloud-div-locations" -%}
+    <div class="text-center my-4 bg-white border rounded p-2">
+        <div id="{{ locations_cloud_id }}"></div>
+    </div>
+    {% include js/cloud-js.html id=locations_cloud_id fields=locations_cloud_fields min=locations_min stopwords=locations_stopwords shuffle=page.shuffle button=page.button %}
+</div>

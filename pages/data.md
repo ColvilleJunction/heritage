@@ -4,6 +4,12 @@ layout: data
 permalink: /data.html
 ---
 
+## Collection as Data
+
+Download this collection's metadata in a variety of reusable formats.
+
+{% include index/data-download.html %}
+
 ## Collection Metadata
 
 The table below provides sorting and basic search of the collection contents. 
