@@ -25,6 +25,10 @@ If you have a story, photo, letter or memory of Colville and the northern Coroma
 
 Every item on this site is shared with the permission of its contributor, at the level they chose: private, view only, reusable with credit, or public domain.
 
+## Our Acknowledgement to Mana Whenua
+
+We acknowledge mana whenua and the enduring connection of tangata whenua to this whenua, its histories and stories. Living Heritage recognises the significance of **Te Tiriti o Waitangi** and aims to reflect this respectfully within the scope and capacity of this community-led project.
+
 ## About what’s said in these stories — disclaimer
 
 These are personal stories and memories shared by people in our community. They belong to the person who spoke them, and they are not the official views of Colville Junction or the Living Heritage team.
