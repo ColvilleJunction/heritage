@@ -15,6 +15,8 @@ Through interviews, digitisation workshops and creative mentoring, young people 
 
 This project is led by the locals, with volunteers, all contributing to a living archive of who we are, supported by [Colville Junction](https://colvillejunction.co.nz).
 
+This archive continues to grow as more stories, images and memories are shared by the community.
+
 ## What you'll find here
 
 A growing collection of interviews, photographs, documents and organisation records from Colville and the wider northern Coromandel Peninsula, each tagged with names, places and events so they're easy to search.
