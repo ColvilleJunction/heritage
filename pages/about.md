@@ -25,7 +25,17 @@ If you have a story, photo, letter or memory of Colville and the northern Coroma
 
 Every item on this site is shared with the permission of its contributor, at the level they chose: private, view only, reusable with credit, or public domain.
 
-### Acknowledging the people who came before us — and those carrying the stories today
+#### About what's said in these stories
+
+These are personal stories and memories shared by people in our community. They belong to the person who spoke them, and they are not the official views of Colville Junction or the Living Heritage team.
+
+We are grateful to people for sharing their experiences, and we do our best to care for them respectfully. But stories told here have not been checked as fact, and they should be read as personal recollections rather than proven history.
+
+Sharing a story on this site is not a sign that Colville Junction, the Living Heritage team, or anyone supporting the project agrees with everything that is said. It simply means the story has been offered and recorded with care.
+
+If you have a concern about something said in an interview, please raise it directly with the person who shared it. Colville Junction and the Living Heritage team are not responsible for statements made by contributors and cannot take on complaints on their behalf.
+
+#### Acknowledging the people who came before us — and those carrying the stories today
 
 Living Heritage did not begin with this website.
 
@@ -48,3 +58,12 @@ This project is therefore not about replacing earlier histories or claiming owne
 To everyone who has researched, remembered, written, photographed, preserved, shared, corrected, questioned and cared for the stories of this place over the years: **we acknowledge your mahi, and we thank you.**
 
 This acknowledgement will continue to grow, just as our understanding of our shared history continues to grow.
+
+#### Press and media
+
+Colville and the Northern Coromandel have been featured in a number of public stories about local life, community, and place.
+
+- [RNZ Country Life: Memories from Colville](https://www.rnz.co.nz/national/programmes/countrylife/audio/2018784333/memories-from-colville)
+- [125 Years of Schooling at Colville Celebrated](https://www.stuff.co.nz/waikato-times/news/hauraki-herald/82009581/125-years-of-schooling-at-colville-celebrated)
+- [From Earth Building to Flamenco Dancing – Colville Easter Festival Has It All](https://www.stuff.co.nz/waikato-times/news/hauraki-herald/90363148/from-earth-building-to-flamenco-dancing--colville-easter-festival-has-it-all)
+- [Sweet Spots: Why Colville is New Zealand's kindest and most helpful place](https://www.stuff.co.nz/life-style/homed/sweet-spots/300249851/sweet-spots-why-colville-is-new-zealands-kindest-and-most-helpful-place)
