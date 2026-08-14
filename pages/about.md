@@ -25,7 +25,7 @@ If you have a story, photo, letter or memory of Colville and the northern Coroma
 
 Every item on this site is shared with the permission of its contributor, at the level they chose: private, view only, reusable with credit, or public domain.
 
-#### About what's said in these stories
+## About what’s said in these stories — disclaimer
 
 These are personal stories and memories shared by people in our community. They belong to the person who spoke them, and they are not the official views of Colville Junction or the Living Heritage team.
 
@@ -35,7 +35,7 @@ Sharing a story on this site is not a sign that Colville Junction, the Living He
 
 If you have a concern about something said in an interview, please raise it directly with the person who shared it. Colville Junction and the Living Heritage team are not responsible for statements made by contributors and cannot take on complaints on their behalf.
 
-#### Acknowledging the people who came before us — and those carrying the stories today
+## Acknowledging the people who came before us — and those carrying the stories today
 
 Living Heritage did not begin with this website.
 
