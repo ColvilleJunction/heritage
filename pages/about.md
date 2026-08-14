@@ -3,7 +3,6 @@ title: About
 layout: about
 permalink: /about.html
 credits: true
-about-featured-image: lh_0001
 position: bottom
 heading: About Living Heritage
 sub-heading: Stories, voices and connections from the northern Coromandel
@@ -19,10 +18,6 @@ This project is led by the locals, with volunteers, all contributing to a living
 ## What you'll find here
 
 A growing collection of interviews, photographs, documents and organisation records from Colville and the wider northern Coromandel Peninsula, each tagged with names, places and events so they're easy to search.
-
-The two items on this site right now are sample placeholders, standing in for the real stories that will replace them as interviews are recorded, digitised and logged. This is a working prototype, not the finished archive.
-
-{% include feature/image.html objectid="lh_0001" width="75" caption=true %}
 
 ## Sharing your story
 
