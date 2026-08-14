@@ -58,12 +58,3 @@ This project is therefore not about replacing earlier histories or claiming owne
 To everyone who has researched, remembered, written, photographed, preserved, shared, corrected, questioned and cared for the stories of this place over the years: **we acknowledge your mahi, and we thank you.**
 
 This acknowledgement will continue to grow, just as our understanding of our shared history continues to grow.
-
-#### Press and media
-
-Colville and the Northern Coromandel have been featured in a number of public stories about local life, community, and place.
-
-- [RNZ Country Life: Memories from Colville](https://www.rnz.co.nz/national/programmes/countrylife/audio/2018784333/memories-from-colville)
-- [125 Years of Schooling at Colville Celebrated](https://www.stuff.co.nz/waikato-times/news/hauraki-herald/82009581/125-years-of-schooling-at-colville-celebrated)
-- [From Earth Building to Flamenco Dancing – Colville Easter Festival Has It All](https://www.stuff.co.nz/waikato-times/news/hauraki-herald/90363148/from-earth-building-to-flamenco-dancing--colville-easter-festival-has-it-all)
-- [Sweet Spots: Why Colville is New Zealand's kindest and most helpful place](https://www.stuff.co.nz/life-style/homed/sweet-spots/300249851/sweet-spots-why-colville-is-new-zealands-kindest-and-most-helpful-place)
