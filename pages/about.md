@@ -16,6 +16,20 @@ Through interviews, digitisation workshops and creative mentoring, young people 
 
 This project is led by the locals, with volunteers, all contributing to a living archive of who we are, supported by [Colville Junction](https://colvillejunction.co.nz).
 
+## What you'll find here
+
+A growing collection of interviews, photographs, documents and organisation records from Colville and the wider northern Coromandel Peninsula, each tagged with names, places and events so they're easy to search.
+
+The two items on this site right now are sample placeholders, standing in for the real stories that will replace them as interviews are recorded, digitised and logged. This is a working prototype, not the finished archive.
+
+{% include feature/image.html objectid="lh_0001" width="75" caption=true %}
+
+## Sharing your story
+
+If you have a story, photo, letter or memory of Colville and the northern Coromandel you would like to share, get in touch with Colville Junction, [colvillejunction.co.nz](https://colvillejunction.co.nz).
+
+Every item on this site is shared with the permission of its contributor, at the level they chose: private, view only, reusable with credit, or public domain.
+
 ### Acknowledging the people who came before us — and those carrying the stories today
 
 Living Heritage did not begin with this website.
@@ -39,17 +53,3 @@ This project is therefore not about replacing earlier histories or claiming owne
 To everyone who has researched, remembered, written, photographed, preserved, shared, corrected, questioned and cared for the stories of this place over the years: **we acknowledge your mahi, and we thank you.**
 
 This acknowledgement will continue to grow, just as our understanding of our shared history continues to grow.
-
-## What you'll find here
-
-A growing collection of interviews, photographs, documents and organisation records from Colville and the wider northern Coromandel Peninsula, each tagged with names, places and events so they're easy to search.
-
-The two items on this site right now are sample placeholders, standing in for the real stories that will replace them as interviews are recorded, digitised and logged. This is a working prototype, not the finished archive.
-
-{% include feature/image.html objectid="lh_0001" width="75" caption=true %}
-
-## Sharing your story
-
-If you have a story, photo, letter or memory of Colville and the northern Coromandel you would like to share, get in touch with Colville Junction, [colvillejunction.co.nz](https://colvillejunction.co.nz).
-
-Every item on this site is shared with the permission of its contributor, at the level they chose: private, view only, reusable with credit, or public domain.
