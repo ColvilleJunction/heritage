@@ -16,6 +16,30 @@ Through interviews, digitisation workshops and creative mentoring, young people 
 
 This project is led by the locals, with volunteers, all contributing to a living archive of who we are, supported by [Colville Junction](https://colvillejunction.co.nz).
 
+### Acknowledging the people who came before us — and those carrying the stories today
+
+Living Heritage did not begin with this website.
+
+Long before this project took shape, people throughout Colville and the Northern Coromandel were already doing the patient work of remembering, recording and caring for our local history. They collected photographs and newspaper clippings, wrote down memories, researched families and properties, maintained memorials, published books, sat on committees, saved documents in cupboards and boxes, and passed stories from one generation to the next.
+
+We acknowledge with deep gratitude the work of the **Colville Historical Committee and the Colville Historical Society**, whose members and supporters spent decades gathering and protecting local history. The Historical Society wound down around 2024, but the legacy of that work remains very much alive in the material, knowledge and relationships that have been handed forward.
+
+We recognise people such as **Midge Mackenzie and Meryl Johnson**, whose long involvement helped sustain organised local heritage work, and **Ngaire Evans and Lena MacLeod**, who are among the community members generously sharing knowledge, memories and connections with Living Heritage today. We also remember earlier contributors such as **Wendy Simons and Doreen Garlick**, and the many people involved in local committees, the War Memorial Hall, community publications, schools, farms, organisations, families and informal networks through which Northern Coromandel history has been kept alive.
+
+But this acknowledgement is intentionally broader than a list of names.
+
+Our history has been carried by **kaumātua and elders, mana whenua and whānau, long-standing local families, newer generations, farmers, teachers, volunteers, community workers, artists, craftspeople, environmental groups, local organisations and neighbours**. It has been preserved in books and archives, but also around kitchen tables, at community meetings, on the farm, in the hall, at the store, along the coast and through the simple act of telling a story to someone willing to listen.
+
+We know there are people whose mahi may never have been formally recorded, and people whose names we have yet to learn. **They are part of Living Heritage too.**
+
+This project is therefore not about replacing earlier histories or claiming ownership of the stories of this place. It is about **supporting the community to carry that work forward** — bringing scattered material together, making it easier to access, recording memories while they can still be shared, and creating space for different people and generations to contribute their own voices.
+
+**The people of the Northern Coromandel are the holders and leaders of this living heritage. Colville Junction is here to support them.**
+
+To everyone who has researched, remembered, written, photographed, preserved, shared, corrected, questioned and cared for the stories of this place over the years: **we acknowledge your mahi, and we thank you.**
+
+This acknowledgement will continue to grow, just as our understanding of our shared history continues to grow.
+
 ## What you'll find here
 
 A growing collection of interviews, photographs, documents and organisation records from Colville and the wider northern Coromandel Peninsula, each tagged with names, places and events so they're easy to search.
