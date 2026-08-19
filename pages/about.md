@@ -13,7 +13,7 @@ Revitalising Colville's Living Heritage is a community writing and storytelling 
 
 Through interviews, digitisation workshops and creative mentoring, young people learn the art of storytelling while our elders share their knowledge, memories and local legends. Living Heritage preserves history and culture in a digital format for every generation, and allows the voices of our young people to present a view of this place and its people to the world.
 
-This project is led by the locals, with volunteers, all contributing to a living archive of who we are, supported by [Colville Junction](https://colvillejunction.co.nz).
+This project is led by the locals, with volunteers, all contributing to a living archive of who we was, supported by [Colville Junction](https://colvillejunction.co.nz) in the establishment of the website.
 
 This archive continues to grow as more stories, images and memories are shared by the community.
 
@@ -29,7 +29,7 @@ Every item on this site is shared with the permission of its contributor, at the
 
 ## Our Acknowledgement to Mana Whenua
 
-We acknowledge mana whenua and the enduring connection of tangata whenua to this whenua, its histories and stories. Living Heritage recognises the significance of **Te Tiriti o Waitangi** and aims to reflect this respectfully within the scope and capacity of this community-led project.
+We acknowledge mana whenua and the enduring connection of tangata whenua to this whenua and its stories. Living Heritage recognises the significance of **Te Tiriti o Waitangi** and aims to reflect this respectfully within the scope and capacity of this community-led project.
 
 ## About what’s said in these stories — disclaimer
 
@@ -57,7 +57,7 @@ Our history has been carried by **kaumātua and elders, mana whenua and whānau,
 
 We know there are people whose mahi may never have been formally recorded, and people whose names we have yet to learn. **They are part of Living Heritage too.**
 
-This project is therefore not about replacing earlier histories or claiming ownership of the stories of this place. It is about **supporting the community to carry that work forward** — bringing scattered material together, making it easier to access, recording memories while they can still be shared, and creating space for different people and generations to contribute their own voices.
+This project is therefore not about replacing earlier stories or claiming ownership of the stories of this place. It is about **supporting the community to carry that work forward** — bringing scattered material together, making it easier to access, recording memories while they can still be shared, and creating space for different people and generations to contribute their own voices.
 
 **The people of the Northern Coromandel are the holders and leaders of this living heritage. Colville Junction is here to support them.**
 
